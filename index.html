@@ -21,9 +21,9 @@
 <body>
   <header class="jumbotron jumbotron-fluid">
     <div class="container">
-      <div class="row">
+      <div class="row row-content align-items-center">
         <div class="col-4 col-sm-3 col-md-2 align-self-center">
-          <img src="img/logo.png" class="img-fluid" />
+          <a href="#"><img src="img/logo.png" class="img-fluid" /></a>
         </div>
         <div class="col">
           <h1>NuCamp</h1>
@@ -88,7 +88,7 @@
           <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="react lake thumbnail" />
         </div>
       </div>  
-        <div class="row">
+        <div class="row row-content align-items-center">
           <div class="col-sm-4 order-sm-last col-md-3">
             <h2 class="text-sm-right">Our Community Partners</h2>
           </div>
@@ -104,8 +104,38 @@
             </div>
           </div>
         </div>
+        <div class="row row-content align-items-center">
+          <div class="col-sm-6 mx-auto">
+            <div class="card">
+              <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+              <div class="card-body">
+                <form>
+                  <div class="row form-group">
+                    <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                    <div class="col">
+                      <select name="numCampers" id="numCampers" class="form-control">
+                        <option value="select">Select</option>
+                        <option value="select">1</option>
+                        <option value="select">2</option>
+                        <option value="select">3</option>
+                        <option value="select">4</option>
+                        <option value="select">5</option>
+                        <option value="select">6</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row form-group">
+                    <label for="date" class="col-sm-6 col-form-label">Date</label>
+                    <div class="col">
+                      <input type="date" name="date" id="date" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="row form-group"></div>
+                </form>
+            </div>
+          </div>
+        </div>
       </div>
-
       <footer class="site-footer">
         <div class="container">
           <div class="row">
